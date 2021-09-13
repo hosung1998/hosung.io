@@ -11,14 +11,17 @@
     <header>
         <div class="logo">KimHoSung</div>
         <ul>
-            <li><a href="#">Service</a></li><!--서비스 소개-->
-            <li><a href="#">environment</a></li><!--개발환경-->
-            <li><a href="#">System structure</a></li><!--시스템 구조-->
-            <li><a href="#">DataBase</a></li><!--시스템 구조-->
-            <li><a href="#">Project Video</a></li><!--시연영상-->
+            <li><a href="#" >Service</a></li><!--서비스 소개-->
+            <li><a href="#" >Planning</a></li><!--과정-->
+            <li><a href="#" onclick="showscroll(3)">System structure</a></li><!--시스템 구조-->
+            <li><a href="#" onclick="showscroll(2)">DataBase</a></li><!--시스템 구조-->
+            <li><a href="#" onclick="showscroll(1)">Project Video</a></li><!--시연영상-->
         </ul>
     </header>
+    <a href="#" class="top_btn">Top</a>     
+    <a href="http://175.195.20.197:8080/Travel/Index/index.jsp" class="hompage">Go to Homepage</a>
     <main>
+        
         <!-- 이미지 슬라이더-->
         <div class="slider">
             <div class="full_slider">
@@ -48,6 +51,7 @@
             </div>
 
         </div>
+        
         <img class="page" style="position: absolute; z-index: 2000; width: 80px; height: 20px; margin-left: 690px; margin-top: -80px;" src="IMG/1page.png" alt="">
         <div class="div_1">
             Project Video
@@ -59,14 +63,14 @@
             </tr>
             <tr style="height: 370px;">
                 <td>
-                    <video controls width="600  ">
+                    <video controls width="600  " autoplay muted>
                         <source src="IMG/관리자모드(시연영상).mp4"type="video/webm">
                         Sorry, your browser doesn't support embedded videos.
                     </video>
                 </td>
                 <td>
-                    <video controls width="600">
-                        <source src="IMG/관리자모드(시연영상).mp4"type="video/webm">
+                    <video controls width="600" autoplay muted>
+                        <source src="IMG/회원모드(시연영상).mp4">
                         Sorry, your browser doesn't support embedded videos.
                     </video>
                 </td>
@@ -96,7 +100,29 @@
     </div>
     <img class="System_str" src="IMG/system.png" alt="">
 
-    <button class="top_Btn" type="button" onclick="goTop()" style="position: fixed;">TOP↑</button>
+
+    <div class="div_1">
+        Planning
+    </div>
+    <img class="plan" src="IMG/Planning.png" alt="">
+    <div class="div_1">
+        Service
+    </div>
+
+    <div class="service_full">
+        <div class="left"><img src="IMG/page1.png" alt=""></div>
+        <div class="service">
+            <img class="service_img" style="float: left; " src="IMG/service1.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service2.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service3.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service4.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service5.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service6.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service7.png" alt="">
+            <img class="service_img" style="float: left; " src="IMG/service8.png" alt="">
+            
+        </div>
+    </div>
     <div class="black_background"></div>
 
 </body>

@@ -4,12 +4,15 @@
     list-style: none;
     font-size: 14px;
     font-family: "맑은 고딕";
+    cursor: url("IMG/cursor.png"), auto;
 }
 body{
     width: 1400px;
     height: 100%;
     margin: 0 auto;
+    
 
+    
 }
 
 /* header */
@@ -19,7 +22,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    width: 1400px;
+    
     margin: auto;
     height: 75px;
 
@@ -29,7 +32,7 @@ header{
     z-index: 9999;
 }
 header ul li{
-    width: 12%;
+    width: 8%;
     float: right;
     text-align: center;
    
@@ -114,7 +117,8 @@ main .slider .full_slider > div{
     top: 400px;
 }
 .div_1{
-    width: 400px;
+    width: 600px;
+    margin: 0 auto;
     height: 50px;
     background: rgb(34,34,34);
     text-align: center;
@@ -126,7 +130,7 @@ main .slider .full_slider > div{
     padding-top: 5px;
     box-shadow: 3px 3px 3px lightgray;
     margin-top: 50px;
-    margin-left: 500px;
+    
 }
 
 
@@ -134,15 +138,77 @@ main .slider .full_slider > div{
     margin-top: 20px;
     width: 1400px;
     margin-bottom: 100px;
-
-
 }
 
 .video_table td{
     text-align: center;
-
 }
 
+.service_full{
+    width: 940px;
+    height: 500px;
+    
+    margin-left: 230px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.service{
+    
+    width: 900px;
+    height: 3840px;
+
+    /* background: red; */
+    float: left;
+    position: relative;
+}
+.service_img{
+    margin-top: 20px;
+    width: 900px;
+    height: 480px;
+    float: left;
+  
+}
+.left{
+    float: left;
+    position: absolute;
+    left: 720px;
+    width: 60px;
+    margin-top: 200px;
+    height: 60px;
+    box-shadow: 2px 2px 2px snow;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-top: 17px;
+ 
+}
+.left:hover{
+    transition: all 0.4s;
+    background: rgba(0, 0, 0, 0.4);
+}
+.right{
+    float: left;
+    position: absolute;
+    left: 1130px;
+    width: 60px;
+    margin-top: 200px;
+    height: 60px;
+    box-shadow: 2px 2px 2px snow;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.right:hover{
+    transition: all 0.4s;
+    background: rgba(0, 0, 0, 0.4);
+}
 /* database */
 .database{
     width: 1400px;
@@ -194,7 +260,13 @@ main .slider .full_slider > div{
     width: 800px;
     height: 200px;
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+.plan{
+    width: 900px;
+    height: 390px;
+    margin-left: 260px;
+    margin-top: 80px;
 }
 
 /* popup */
@@ -220,7 +292,7 @@ main .slider .full_slider > div{
 	z-index:5001;
 	overflow: auto;
 	overflow-x:hidden;
-	top:196%;
+	top:126%;
 	left:50%;
 	transform: translate(-50%, -50%);
 }
@@ -240,8 +312,42 @@ main .slider .full_slider > div{
 	color: white;
 	text-decoration: none;
 }
-.top_Btn{
+.top_btn {
     position: fixed;
-    float: right;
+    left: 80%;
+    bottom: 50px;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    background: black;
+    display: none;
+    z-index: 9999;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-top: 20px;
+  }
 
-}
+  .hompage{
+    position: fixed;
+    left: 1%;
+    top: 100px;
+    width: 240px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    background: rgb(34,34,34);
+  }
+  .hompage:hover{
+      transition: all 0.2s;
+      background: gray;
+      color: white;
+  }
