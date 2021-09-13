@@ -15,45 +15,64 @@ body{
 /* header */
 
 header{
-    width: 100%;
-    height: 65px;
-    background: white;
-    border-bottom: 2px solid rgb(1, 171, 154);
-    box-shadow: 0,0,0,0.4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1400px;
+    margin: auto;
+    height: 75px;
+
+    color: white;
+    background: rgb(34,34,34);
+    font-weight: bold;
+    z-index: 9999;
 }
 header ul li{
-    width: 15%;
+    width: 12%;
     float: right;
     text-align: center;
+   
 }
 header ul li a{
     text-decoration: none;
     padding: 10px 4px;
     display: block;
     margin-top: 20px;
-    color: rgb(1, 171, 154);
+    color: white;
     font-size: 14px;
+    width: 150px;
+    border-radius: 10px;
     font-weight: bold;
 }
 header ul li a:hover{
     
     transition: all 0.4s;
-    color: gray;
+    background: white;
+    color: black;
 }
-header .logo img{
+header .logo {
     position: absolute;
     margin-top: 10px;
-    width: 130px;
-    height: 60px;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: white;
+
+    font-weight: bold;
+    font-size: 30px;
 }
 
 /* main */
 main{
+    margin-top: 100px;
     width: 100%;
     background: white;
 }
 main .slider{
-    height: 800px;
+    height: 600px;
     padding-top: 50px;
     margin: 0px auto;
     overflow: hidden;
@@ -72,12 +91,13 @@ main .slider .full_slider > div{
     float: left;
     margin: 0 auto;
     width: 1400px;
-    height: 800px;
-    
+    height: 500px;
+    /* background: blueviolet; */
     position: relative;
 }
 .slider img{
-    padding-left: 200px;
+    padding-left: 400px;
+    height: 480px;
     box-sizing: border-box;
     position: absolute;
 }
@@ -91,5 +111,137 @@ main .slider .full_slider > div{
     float: right;
     z-index: 1000;
     margin-left: 800px;
-    top: 600px;
+    top: 400px;
+}
+.div_1{
+    width: 400px;
+    height: 50px;
+    background: rgb(34,34,34);
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 24px;
+
+    color: white;
+    padding-top: 5px;
+    box-shadow: 3px 3px 3px lightgray;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+
+.video_table{
+    margin-top: 20px;
+    width: 1400px;
+    margin-bottom: 100px;
+
+
+}
+
+.video_table td{
+    text-align: center;
+
+}
+
+/* database */
+.database{
+    width: 1400px;
+    height: 420px;
+    margin: 20px;
+    margin-top: 50px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.database .erd{
+    float: left;
+    width: 750px;
+    height: 400px;
+    margin-left: 60px;
+   
+}
+.database .erd_table{
+    width: 350px;
+    margin-left: 100px;
+    height: 400px;
+}
+.database .more{
+    width: 50px;
+    
+    height: 50px;
+    position: absolute;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    margin-left: 730px;
+    margin-top: 330px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.database .more:hover{
+    transition: all 0.4s;
+    background: gray;
+    color: black;
+}
+.erd{
+    box-shadow: 4px 4px 4px lightgray;
+}
+
+.System_str{
+    width: 800px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+/* popup */
+.black_background{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 500%;
+	background-color: black;
+	z-index:4001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+.more_img_box {
+	display: none;
+	width: 1200px;
+	height: 740px;
+	position: absolute;
+	background-color: white;
+	z-index:5001;
+	overflow: auto;
+	overflow-x:hidden;
+	top:196%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.more_img_box .top {
+	width: 100%;
+	height: 30px; 
+	padding-left:10px;
+	background-color: black;
+    z-index: 6001;
+}
+.more_img_box .top a{
+	float:right;
+	margin-right:20px;
+	font-weight: bold; 
+	font-family: "맑은 고딕";
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+.top_Btn{
+    position: fixed;
+    float: right;
+
 }
